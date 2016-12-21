@@ -1,7 +1,9 @@
-#host {
-
-    --console-border-radius: 4px;
-    --button-font: "Comic Sans MS", "Comic Sans", cursive;
+body {
+    background-image: radial-gradient(
+            circle,
+            rgba(246, 246, 246, 0.5),
+            #fff
+    );
 }
 
 console {
@@ -12,32 +14,33 @@ console {
     --console-color-yellow: rgb(253, 188, 64);
     --console-color-red: rgb(252, 99, 94);
     --console-color-text: rgb(199, 199, 199);
-
     display: block;
     border-bottom-left-radius: var(--console-border-radius);
     border-bottom-right-radius: var(--console-border-radius);
-    width: 50%;
-    min-width:500px;
+    width: 60%;
+    min-width: 500px;
     font-family: Monaco, monospace;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
 
 }
 
 console > header {
     box-sizing: border-box;
     background-color: rgb(246, 246, 246);
-    height: 22px;
+    height: 23px;
     width: 100%;
     display: block;
     border-top-left-radius: var(--console-border-radius);
     border-top-right-radius: var(--console-border-radius);
-    border-bottom-left-radius: var(--console-border-radius);
     border: 1px solid rgba(178, 178, 178, 0.5);
-    border-bottom: 0;
 }
 
 console > header, .title {
     text-align: center;
-    color: rgb(178, 178, 178);
+    color: black;
     font-family: sans-serif;
     font-size: 14px;
     vertical-align: middle;
@@ -75,14 +78,12 @@ console > header, .title {
 
 console > screen {
     background: #000;
-    border-left: 1px #000 solid;
-    border-top: .5px solid rgb(178, 178, 178);
     color: #fff;
     font-size: 12px;
     overflow-y: scroll;
 
     min-height: 500px;
-    height:40%;
+    height: 40%;
     display: inline-block;
     border-bottom-left-radius: var(--console-border-radius);
 
@@ -137,11 +138,6 @@ console > screen {
 
 .path-arrow-yellow {
     color: var(--console-color-yellow);
-}
-
-html2 {
-    background: url("images/terminal.png") no-repeat center center fixed;
-    background-size: contain;
 }
 
 .social-media-presence {
