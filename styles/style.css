@@ -1,14 +1,156 @@
-html{
+#host {
+
+    --console-border-radius: 4px;
+    --button-font: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+console {
+    margin: auto;
+
+    --console-border-radius: 4px;
+    --console-color-green: rgb(53, 205, 75);
+    --console-color-yellow: rgb(253, 188, 64);
+    --console-color-red: rgb(252, 99, 94);
+    --console-color-text: rgb(199, 199, 199);
+
+    display: block;
+    border-bottom-left-radius: var(--console-border-radius);
+    border-bottom-right-radius: var(--console-border-radius);
+    width: 50%;
+    min-width:500px;
+    font-family: Monaco, monospace;
+
+}
+
+console > header {
+    box-sizing: border-box;
+    background-color: rgb(246, 246, 246);
+    height: 22px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: var(--console-border-radius);
+    border-top-right-radius: var(--console-border-radius);
+    border-bottom-left-radius: var(--console-border-radius);
+    border: 1px solid rgba(178, 178, 178, 0.5);
+    border-bottom: 0;
+}
+
+console > header, .title {
+    text-align: center;
+    color: rgb(178, 178, 178);
+    font-family: sans-serif;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.window-command-block {
+    display: block;
+    margin-left: 7px;
+}
+
+.window-command-block > .entry {
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+.minimize {
+    background-color: rgb(253, 188, 64);
+
+}
+
+.maximize {
+    background-color: rgb(53, 205, 75);
+}
+
+.close {
+    background-color: rgb(252, 99, 94);
+}
+
+console > screen {
+    background: #000;
+    border-left: 1px #000 solid;
+    border-top: .5px solid rgb(178, 178, 178);
+    color: #fff;
+    font-size: 12px;
+    overflow-y: scroll;
+
+    min-height: 500px;
+    height:40%;
+    display: inline-block;
+    border-bottom-left-radius: var(--console-border-radius);
+
+}
+
+.command-blocks {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+
+.command-block > .working-directory {
+    float: left;
+    margin-right: 5px;
+}
+
+.command-block {
+    margin-left: 3px;
+}
+
+.command-block > .command {
+    color: lightseagreen;
+    margin-left: 3px;
+}
+
+.command-block > .command > .cursor {
+    color: var(--console-color-text);
+    width: 2px;
+    background-color: var(--console-color-text);;
+}
+
+.command-block > .command-result {
+    color: var(--console-color-text);
+}
+
+.git-add {
+    margin-left: 50px;
+    color: rgb(0, 168, 28);
+}
+
+.path {
+    color: rgb(99, 110, 204);
+}
+
+.path-arrow-red {
+    color: var(--console-color-red);
+}
+
+.path-arrow-green {
+    color: var(--console-color-green);
+}
+
+.path-arrow-yellow {
+    color: var(--console-color-yellow);
+}
+
+html2 {
     background: url("images/terminal.png") no-repeat center center fixed;
     background-size: contain;
 }
-.social-media-presence{
+
+.social-media-presence {
     position: fixed;
     top: 40%;
 }
 
-.linky{
-    width:32px;
+.linky {
+    width: 32px;
     height: 32px;
     text-align: center;
     background-color: black;
@@ -21,6 +163,7 @@ html{
     margin: 6px;
     font-family: monospace;
 }
-.github{
+
+.github {
     margin: 6px;
 }
