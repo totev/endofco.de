@@ -168,6 +168,10 @@ console > screen {
     font-family: monospace;
 }
 
+ .www.recycle{
+    font-size: 22px;
+}
+
 .github {
     margin: 6px;
 }
