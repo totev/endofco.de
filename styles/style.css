@@ -4,6 +4,8 @@ body {
             rgba(246, 246, 246, 0.5),
             #fff
     );
+    margin:0;
+    --border-radius:5px;
 }
 
 console {
@@ -173,9 +175,17 @@ console > screen {
     margin: 6px;
 }
 
-.apple-shadow{
-    background: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
-    box-sizing: border-box;
+/*
+    Grow from https://ianlunn.github.io/Hover/
+
+*/
+.hvr-grow {
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    transform: scale(1.1);
 }
