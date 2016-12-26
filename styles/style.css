@@ -16,10 +16,9 @@ console {
     --console-color-text: rgb(199, 199, 199);
     --console-default-margin: 3px;
     display: block;
-    border-bottom-left-radius: var(--console-border-radius);
-    border-bottom-right-radius: var(--console-border-radius);
     width: 60%;
     min-width: 500px;
+
     font-family: Monaco, monospace;
     position: absolute;
     left: 50%;
@@ -89,12 +88,10 @@ console > screen {
     color: #fff;
     font-size: 12px;
     overflow-y: scroll;
-
-    min-height: 500px;
-    height: 40%;
-    display: inline-block;
+    display: block;
+    height: 100%;
     border-bottom-left-radius: var(--console-border-radius);
-
+    border-bottom-right-radius: var(--console-border-radius);
 }
 
 .command-blocks {
@@ -162,7 +159,7 @@ console > screen {
     mix-blend-mode: multiply;
     display: block;
     font-size: 26px;
-    border-radius: 4px;
+    border-radius: 5px;
     text-decoration: none;
     margin: 6px;
     font-family: monospace;
@@ -174,4 +171,11 @@ console > screen {
 
 .github {
     margin: 6px;
+}
+
+.apple-shadow{
+    background: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+    box-sizing: border-box;
 }
