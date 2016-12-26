@@ -189,3 +189,10 @@ console > screen {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     transform: scale(1.1);
 }
+
+.apple-shadow{
+    background: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+    box-sizing: border-box;
+}
