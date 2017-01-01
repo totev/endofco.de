@@ -158,7 +158,6 @@ console > screen {
     text-align: center;
     background-color: black;
     color: white;
-    mix-blend-mode: multiply;
     display: block;
     font-size: 26px;
     border-radius: 5px;
