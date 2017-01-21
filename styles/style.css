@@ -179,6 +179,8 @@ console > screen {
 
 */
 .hvr-grow {
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
